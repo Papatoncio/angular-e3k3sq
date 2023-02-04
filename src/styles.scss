@@ -85,7 +85,12 @@ a {
     white-space: pre-wrap;
 }
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+    .home-page img {
+        width: 320;
+        height: 320;
+    }
+}
 
 @media screen and (max-width: 768px) {}
 
