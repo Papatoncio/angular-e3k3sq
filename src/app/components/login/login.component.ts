@@ -7,26 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  email: String;
-  password: String;
+  email: string;
+  password: string;
 
-  constructor() { 
+  constructor() {
     this.email = "";
     this.password = "";
   }
 
   ngOnInit(): void {
     // TODO document why this method 'ngOnInit' is empty
-  
+
   }
 
-  login(){
+  login() {
     console.log("Email: " + this.email);
     console.log("Password: " + this.password);
 
-    if(this.email == "admin" && this.password == "linux"){
+    if (this.email == "admin" && this.password == "linux") {
       console.log("Bienvenido Administrador");
-    }else{
+    } else {
       console.log("Acceso Denegado");
     }
   }

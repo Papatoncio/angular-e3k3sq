@@ -7,9 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  email: string;
+  nombre: string;
+  telefono: string;
+  password: string;
 
-  ngOnInit(): void {
+  constructor() {
+    this.email = "";
+    this.nombre = "";
+    this.telefono = "";
+    this.password = "";
   }
 
+  ngOnInit(): void {
+    // TODO document why this method 'ngOnInit' is empty
+
+  }
+
+
+  register() {
+    if (!(this.email == "" && this.nombre == "" && this.telefono == "" && this.password == "")) {
+      console.log("Usuario Creado");
+    } else {
+      console.log("Llena Todos los Campos");
+    }
+  }
 }
