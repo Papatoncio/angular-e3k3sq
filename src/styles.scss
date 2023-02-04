@@ -13,13 +13,14 @@ body {
 }
 
 .header {
-    background-color: black;
+    background-color: #cdb4db;
     text-align: justify;
     vertical-align: middle;
     width: 100%;
     height: fit-content;
     position: sticky;
-    position: -webkit-sticky; //Safari
+    position: -webkit-sticky;
+    top: 0;
 }
 
 .nav {
@@ -28,11 +29,9 @@ body {
     padding-top: 15px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: #cdb4db;
 }
 
 .li {
-    display: inline;
     margin: 5px;
     padding: 7px;
     background-color: #ffafcc;
@@ -60,9 +59,9 @@ a {
 
 .home-page {
     position: absolute;
+    right: 2%;
     text-align: center;
     align-content: center;
-    right: 2%;
     width: 96%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -70,22 +69,38 @@ a {
     border-radius: 5px;
 }
 
-.home-page .container {
-    display: inline;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
+.home-page div {
+    padding: 10px;
+
 }
 
 .home-page img {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 }
 
 .home-page p {
+    width: fit-content;
     text-align: center;
     white-space: pre-wrap;
+}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 1200px) {
+    header {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+
+    .nav a {
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
 }
 
 
@@ -132,7 +147,7 @@ a {
 
     100% {
         -webkit-transform: translateY(-150px) translateX(-150px);
-        transform: translateY(-400px) translateX(-300px);
+        transform: translateY(-400px) translateX(10px);
     }
 }
 
@@ -144,7 +159,7 @@ a {
 
     100% {
         -webkit-transform: translateY(-150px) translateX(-150px);
-        transform: translateY(-400px) translateX(-300px);
+        transform: translateY(-400px) translateX(10px);
     }
 }
 
@@ -168,7 +183,7 @@ a {
 
     100% {
         -webkit-transform: translateY(-150px) translateX(150px);
-        transform: translateY(-400px) translateX(300px);
+        transform: translateY(-400px) translateX(600px);
     }
 }
 
@@ -180,7 +195,7 @@ a {
 
     100% {
         -webkit-transform: translateY(-150px) translateX(150px);
-        transform: translateY(-400px) translateX(300px);
+        transform: translateY(-400px) translateX(600px);
     }
 }
 
