@@ -112,7 +112,6 @@ a {
 
 .home-page div {
     padding: 10px;
-
 }
 
 .home-page img {
@@ -145,7 +144,7 @@ a {
 @media screen and (max-width: 1200px) {
     header {
         padding: 14px 2%;
-        transition: .2s;
+        transition: 0.2s;
     }
 
     .nav a {
@@ -154,27 +153,26 @@ a {
     }
 }
 
-
 //Animista.net
 //Classes
 .slide-tl {
-    -webkit-animation: slide-tl 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-tl 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-tl 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-tl 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .slide-tr {
-    -webkit-animation: slide-tr 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-tr 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-tr 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-tr 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .slide-left {
-    -webkit-animation: slide-left 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-left 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .slide-right {
-    -webkit-animation: slide-right 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-right 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .slide-bottom {
@@ -997,10 +995,10 @@ a {
 .hvr-bob:active {
     -webkit-animation-name: hvr-bob-float, hvr-bob;
     animation-name: hvr-bob-float, hvr-bob;
-    -webkit-animation-duration: .3s, 1.5s;
-    animation-duration: .3s, 1.5s;
-    -webkit-animation-delay: 0s, .3s;
-    animation-delay: 0s, .3s;
+    -webkit-animation-duration: 0.3s, 1.5s;
+    animation-duration: 0.3s, 1.5s;
+    -webkit-animation-delay: 0s, 0.3s;
+    animation-delay: 0s, 0.3s;
     -webkit-animation-timing-function: ease-out, ease-in-out;
     animation-timing-function: ease-out, ease-in-out;
     -webkit-animation-iteration-count: 1, infinite;
@@ -1073,10 +1071,10 @@ a {
 .hvr-hang:active {
     -webkit-animation-name: hvr-hang-sink, hvr-hang;
     animation-name: hvr-hang-sink, hvr-hang;
-    -webkit-animation-duration: .3s, 1.5s;
-    animation-duration: .3s, 1.5s;
-    -webkit-animation-delay: 0s, .3s;
-    animation-delay: 0s, .3s;
+    -webkit-animation-duration: 0.3s, 1.5s;
+    animation-duration: 0.3s, 1.5s;
+    -webkit-animation-delay: 0s, 0.3s;
+    animation-delay: 0s, 0.3s;
     -webkit-animation-timing-function: ease-out, ease-in-out;
     animation-timing-function: ease-out, ease-in-out;
     -webkit-animation-iteration-count: 1, infinite;
@@ -1987,7 +1985,7 @@ a {
 .hvr-fade:hover,
 .hvr-fade:focus,
 .hvr-fade:active {
-    background-color: #2098D1;
+    background-color: #2098d1;
     color: white;
 }
 
@@ -2050,14 +2048,14 @@ a {
 }
 
 .hvr-sweep-to-right:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2098D1;
+    background: #2098d1;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -2098,14 +2096,14 @@ a {
 }
 
 .hvr-sweep-to-left:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2098D1;
+    background: #2098d1;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 100% 50%;
@@ -2146,14 +2144,14 @@ a {
 }
 
 .hvr-sweep-to-bottom:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2098D1;
+    background: #2098d1;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50% 0;
@@ -2194,14 +2192,14 @@ a {
 }
 
 .hvr-sweep-to-top:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2098D1;
+    background: #2098d1;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50% 100%;
@@ -2242,14 +2240,14 @@ a {
 }
 
 .hvr-bounce-to-right:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2098D1;
+    background: #2098d1;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -2292,14 +2290,14 @@ a {
 }
 
 .hvr-bounce-to-left:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2098D1;
+    background: #2098d1;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 100% 50%;
@@ -2342,14 +2340,14 @@ a {
 }
 
 .hvr-bounce-to-bottom:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2098D1;
+    background: #2098d1;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50% 0;
@@ -2392,14 +2390,14 @@ a {
 }
 
 .hvr-bounce-to-top:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2098D1;
+    background: #2098d1;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50% 100%;
@@ -2444,14 +2442,14 @@ a {
 }
 
 .hvr-radial-out:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2098D1;
+    background: #2098d1;
     border-radius: 100%;
     -webkit-transform: scale(0);
     transform: scale(0);
@@ -2485,7 +2483,7 @@ a {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
-    background: #2098D1;
+    background: #2098d1;
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;
@@ -2493,7 +2491,7 @@ a {
 }
 
 .hvr-radial-in:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
@@ -2533,7 +2531,7 @@ a {
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
-    background: #2098D1;
+    background: #2098d1;
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;
@@ -2541,7 +2539,7 @@ a {
 }
 
 .hvr-rectangle-in:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
@@ -2588,14 +2586,14 @@ a {
 }
 
 .hvr-rectangle-out:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2098D1;
+    background: #2098d1;
     -webkit-transform: scale(0);
     transform: scale(0);
     -webkit-transition-property: transform;
@@ -2627,7 +2625,7 @@ a {
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
-    background: #2098D1;
+    background: #2098d1;
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;
@@ -2635,7 +2633,7 @@ a {
 }
 
 .hvr-shutter-in-horizontal:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
@@ -2684,14 +2682,14 @@ a {
 }
 
 .hvr-shutter-out-horizontal:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #2098D1;
+    background: #2098d1;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 50%;
@@ -2725,7 +2723,7 @@ a {
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
-    background: #2098D1;
+    background: #2098d1;
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;
@@ -2733,7 +2731,7 @@ a {
 }
 
 .hvr-shutter-in-vertical:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
@@ -2782,14 +2780,14 @@ a {
 }
 
 .hvr-shutter-out-vertical:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #2098D1;
+    background: #2098d1;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50%;
@@ -2834,7 +2832,7 @@ a {
 .hvr-border-fade:hover,
 .hvr-border-fade:focus,
 .hvr-border-fade:active {
-    box-shadow: inset 0 0 0 4px #2098D1, 0 0 1px rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 4px #2098d1, 0 0 1px rgba(0, 0, 0, 0);
     /* Hack to improve aliasing on mobile/tablet devices */
 }
 
@@ -3090,13 +3088,13 @@ a {
 }
 
 .hvr-underline-from-left:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     left: 0;
     right: 100%;
     bottom: 0;
-    background: #2098D1;
+    background: #2098d1;
     height: 4px;
     -webkit-transition-property: right;
     transition-property: right;
@@ -3124,13 +3122,13 @@ a {
 }
 
 .hvr-underline-from-center:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     left: 51%;
     right: 51%;
     bottom: 0;
-    background: #2098D1;
+    background: #2098d1;
     height: 4px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
@@ -3159,13 +3157,13 @@ a {
 }
 
 .hvr-underline-from-right:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     left: 100%;
     right: 0;
     bottom: 0;
-    background: #2098D1;
+    background: #2098d1;
     height: 4px;
     -webkit-transition-property: left;
     transition-property: left;
@@ -3193,13 +3191,13 @@ a {
 }
 
 .hvr-overline-from-left:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     left: 0;
     right: 100%;
     top: 0;
-    background: #2098D1;
+    background: #2098d1;
     height: 4px;
     -webkit-transition-property: right;
     transition-property: right;
@@ -3227,13 +3225,13 @@ a {
 }
 
 .hvr-overline-from-center:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     left: 51%;
     right: 51%;
     top: 0;
-    background: #2098D1;
+    background: #2098d1;
     height: 4px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
@@ -3262,13 +3260,13 @@ a {
 }
 
 .hvr-overline-from-right:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     left: 100%;
     right: 0;
     top: 0;
-    background: #2098D1;
+    background: #2098d1;
     height: 4px;
     -webkit-transition-property: left;
     transition-property: left;
@@ -3296,14 +3294,14 @@ a {
 }
 
 .hvr-reveal:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    border-color: #2098D1;
+    border-color: #2098d1;
     border-style: solid;
     border-width: 0;
     -webkit-transition-property: border-width;
@@ -3334,13 +3332,13 @@ a {
 }
 
 .hvr-underline-reveal:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2098D1;
+    background: #2098d1;
     height: 4px;
     -webkit-transform: translateY(4px);
     transform: translateY(4px);
@@ -3371,13 +3369,13 @@ a {
 }
 
 .hvr-overline-reveal:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     left: 0;
     right: 0;
     top: 0;
-    background: #2098D1;
+    background: #2098d1;
     height: 4px;
     -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
@@ -3521,8 +3519,13 @@ a {
     height: 10px;
     width: 90%;
     opacity: 0;
-    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: -webkit-radial-gradient(center,
+            ellipse,
+            rgba(0, 0, 0, 0.35) 0%,
+            rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center,
+            rgba(0, 0, 0, 0.35) 0%,
+            rgba(0, 0, 0, 0) 80%);
     /* W3C */
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
@@ -3576,14 +3579,24 @@ a {
 
 .hvr-shadow-radial:before {
     bottom: 100%;
-    background: -webkit-radial-gradient(50% 150%, ellipse, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);
-    background: radial-gradient(ellipse at 50% 150%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);
+    background: -webkit-radial-gradient(50% 150%,
+            ellipse,
+            rgba(0, 0, 0, 0.6) 0%,
+            rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at 50% 150%,
+            rgba(0, 0, 0, 0.6) 0%,
+            rgba(0, 0, 0, 0) 80%);
 }
 
 .hvr-shadow-radial:after {
     top: 100%;
-    background: -webkit-radial-gradient(50% -50%, ellipse, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);
-    background: radial-gradient(ellipse at 50% -50%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);
+    background: -webkit-radial-gradient(50% -50%,
+            ellipse,
+            rgba(0, 0, 0, 0.6) 0%,
+            rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at 50% -50%,
+            rgba(0, 0, 0, 0.6) 0%,
+            rgba(0, 0, 0, 0) 80%);
 }
 
 .hvr-shadow-radial:hover:before,
@@ -4190,7 +4203,7 @@ a {
 .hvr-icon-fade:hover .hvr-icon,
 .hvr-icon-fade:focus .hvr-icon,
 .hvr-icon-fade:active .hvr-icon {
-    color: #0F9E5E;
+    color: #0f9e5e;
 }
 
 /* Icon Float Away */
@@ -4812,10 +4825,10 @@ a {
 .hvr-icon-bob:active .hvr-icon {
     -webkit-animation-name: hvr-icon-bob-float, hvr-icon-bob;
     animation-name: hvr-icon-bob-float, hvr-icon-bob;
-    -webkit-animation-duration: .3s, 1.5s;
-    animation-duration: .3s, 1.5s;
-    -webkit-animation-delay: 0s, .3s;
-    animation-delay: 0s, .3s;
+    -webkit-animation-duration: 0.3s, 1.5s;
+    animation-duration: 0.3s, 1.5s;
+    -webkit-animation-delay: 0s, 0.3s;
+    animation-delay: 0s, 0.3s;
     -webkit-animation-timing-function: ease-out, ease-in-out;
     animation-timing-function: ease-out, ease-in-out;
     -webkit-animation-iteration-count: 1, infinite;
@@ -4895,10 +4908,10 @@ a {
 .hvr-icon-hang:active .hvr-icon {
     -webkit-animation-name: hvr-icon-hang-sink, hvr-icon-hang;
     animation-name: hvr-icon-hang-sink, hvr-icon-hang;
-    -webkit-animation-duration: .3s, 1.5s;
-    animation-duration: .3s, 1.5s;
-    -webkit-animation-delay: 0s, .3s;
-    animation-delay: 0s, .3s;
+    -webkit-animation-duration: 0.3s, 1.5s;
+    animation-duration: 0.3s, 1.5s;
+    -webkit-animation-delay: 0s, 0.3s;
+    animation-delay: 0s, 0.3s;
     -webkit-animation-timing-function: ease-out, ease-in-out;
     animation-timing-function: ease-out, ease-in-out;
     -webkit-animation-iteration-count: 1, infinite;
