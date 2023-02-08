@@ -8,12 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class RegisterComponent implements OnInit {
 
   email: string;
+  confEmail: string;
   nombre: string;
   telefono: string;
   password: string;
 
   constructor() {
     this.email = "";
+    this.confEmail = "";
     this.nombre = "";
     this.telefono = "";
     this.password = "";
@@ -26,8 +28,12 @@ export class RegisterComponent implements OnInit {
 
 
   register() {
-    if (!(this.email == "" && this.nombre == "" && this.telefono == "" && this.password == "")) {
-      console.log("Usuario Creado");
+    if (!(this.email == "" && this.email == "" && this.nombre == "" && this.telefono == "" && this.password == "")) {
+      if (this.email == this.confEmail) {
+        console.log("Usuario Creado");
+      } else {
+        console.log("Los Email no coinciden");
+      }
     } else {
       console.log("Llena Todos los Campos");
     }

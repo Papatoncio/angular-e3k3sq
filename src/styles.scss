@@ -61,7 +61,7 @@ body {
     height: fit-content;
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
+    top: 0px;
 }
 
 .nav {
@@ -72,18 +72,18 @@ body {
     padding-right: 10px;
 }
 
-.li {
+.nav .li {
     margin: 5px;
     padding: 7px;
     background-color: #ffafcc;
     border-radius: 0.7em;
 }
 
-a:hover {
+.nav a:hover {
     color: #ffff2bcd;
 }
 
-a {
+.nav a {
     text-decoration: none;
     text-emphasis-color: none;
     color: #bde0fe;
@@ -91,16 +91,8 @@ a {
     width: 100%;
 }
 
-.footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    width: 100%;
-}
-
 .home-page {
-    position: absolute;
-    right: 2%;
+    margin: auto;
     text-align: center;
     align-content: center;
     width: 96%;
@@ -124,6 +116,10 @@ a {
     width: fit-content;
     text-align: center;
     white-space: pre-wrap;
+}
+
+i:hover {
+    color: #ffff2bcd;
 }
 
 @media screen and (max-width: 480px) {
