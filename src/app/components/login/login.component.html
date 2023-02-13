@@ -15,9 +15,12 @@
                     [(ngModel)]="email">
                 <label for="float-input">Email</label>
             </span>
+            <input type="text" name="email" id="email" [(ngModel)]="email"
+                class="hvr-glow">
             <br>
             <i class="pi pi-key"></i>
-            <p-password [(ngModel)]="password" [toggleMask]="true"></p-password>
+            <input type="password" name="password" id="password"
+                [(ngModel)]="password" class="hvr-glow">
             <br>
             <button type="submit" (click)="login()" class="hvr-glow">Login</button>
         </form>

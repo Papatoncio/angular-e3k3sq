@@ -12,7 +12,6 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { PrimeNGConfig } from 'primeng/api';
 
 @NgModule({
   declarations: [
