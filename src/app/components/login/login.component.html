@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="" method="post" class="forma">
-        <h1 class="text-pop-up-top">Ingresar al Sistema</h1>
-        <input type="text" name="email" id="email" [(ngModel)]="email" placeholder="Email" required="required" class="hvr-glow">
-        <br>
-        <input type="password" name="password" id="password" [(ngModel)]="password" placeholder="Password" required="required" class="hvr-glow">
-        <br>
-        <button type="submit" (click)="login()" class="hvr-glow">Login</button>
-    </form>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="" method="post" class="forma">
+            <h1 class="text-pop-up-top">Ingresar al Sistema</h1>
+            <i class="pi pi-user"></i>
+            <span class="p-float-label">
+                <input id="float-input" type="text" pInputText
+                    [(ngModel)]="email">
+                <label for="float-input">Email</label>
+            </span>
+            <br>
+            <i class="pi pi-key"></i>
+            <p-password [(ngModel)]="password" [toggleMask]="true"></p-password>
+            <br>
+            <button type="submit" (click)="login()" class="hvr-glow">Login</button>
+        </form>
+    </body>
 </html>

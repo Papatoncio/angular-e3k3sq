@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="" method="post" class="forma">
-        <h1 class="text-pop-up-top">Registro</h1>
-        <input type="text" name="email" id="email" [(ngModel)]="email" placeholder="Email" required="required" class="hvr-glow">
-        <br>
-        <input type="text" name="nombre" id="nombre" [(ngModel)]="nombre" placeholder="Nombre" required="required"class="hvr-glow">
-        <br>
-        <input type="text" name="telefono" id="telefono" [(ngModel)]="telefono" placeholder="Telefono" required="required"class="hvr-glow">
-        <br>
-        <input type="password" name="password" id="password" [(ngModel)]="password" placeholder="Password" required="required" class="hvr-glow">
-        <br>
-        <button type="submit" (click)="register()" class="hvr-glow">Login</button>
-    </form>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="" method="post" class="forma">
+            <h1 class="text-pop-up-top">Registro</h1>
+            <input type="text" name="email" id="email" [(ngModel)]="email"
+                placeholder="Email" required="required" class="hvr-glow">
+            <br>
+            <input type="password" name="password" id="password"
+                [(ngModel)]="password" placeholder="Contraseña"
+                required="required" class="hvr-glow">
+            <br>
+            <input type="password" name="password" id="password"
+                [(ngModel)]="confirmPassword" placeholder="Confirmar Contraseña"
+                required="required" class="hvr-glow">
+            <br>
+            <button type="submit" (click)="register()" class="hvr-glow">Registrarse</button>
+        </form>
+    </body>
 </html>

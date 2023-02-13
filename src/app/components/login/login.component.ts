@@ -1,34 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { UsersService } from '../../services/users.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
+  email: string; //Captura de email
+  password: string;  //Captura de password
 
-  email: string;
-  password: string;
-
-  constructor() {
-    this.email = "";
-    this.password = "";
+  constructor(public userService: UsersService) { //Inicializar los dos atributos
+    this.email = '';
+    this.password = '';
   }
 
-  ngOnInit(): void {
-    // TODO document why this method 'ngOnInit' is empty
+  login() {  //Función para evento clic
+    const user = { email: this.email, password: this.password };
 
+    this.userService.login(user).subscribe(data => {
+      console.log(data);
+    });
+
+    console.log('Email: ' + this.email);
+    console.log('Password: ' + this.password);
   }
-
-  login() {
-    console.log("Email: " + this.email);
-    console.log("Password: " + this.password);
-
-    if (this.email == "admin" && this.password == "linux") {
-      console.log("Bienvenido Administrador");
-    } else {
-      console.log("Acceso Denegado");
-    }
-  }
-
 }
