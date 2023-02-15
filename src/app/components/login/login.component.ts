@@ -1,5 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { UsersService } from '../../services/users.service';
+import { DOCUMENT } from '@angular/common';
+
+// Import the AuthService type from the SDK
+import { AuthService } from '@auth0/auth0-angular';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +14,7 @@ export class LoginComponent {
   email: string; //Captura de email
   password: string;  //Captura de password
 
-  constructor(public userService: UsersService) { //Inicializar los dos atributos
+  constructor(@Inject(DOCUMENT) public document: Document, public userService: UsersService, public auth: AuthService) { //Inicializar los dos atributos
     this.email = '';
     this.password = '';
   }
