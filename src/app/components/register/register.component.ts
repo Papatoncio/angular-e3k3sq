@@ -20,11 +20,7 @@ export class RegisterComponent {
   }
 
   register() {  //Función para evento clic
-    console.log('Email: ' + this.email);
-    console.log('Password: ' + this.password);
-    console.log('Confirm Password: ' + this.confirmPassword);
-
-    const user = { email: this.email, password: this.password };
+    var user = { email: this.email, password: this.password };
 
     this.userService.register(user).subscribe(data => {
       console.log(data);

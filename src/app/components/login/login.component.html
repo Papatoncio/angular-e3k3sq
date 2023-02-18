@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <form action="" method="post" class="forma">
-            <h1 class="text-pop-up-top">Ingresar al Sistema</h1>
-            <i class="fas fa-user"></i>
-            <input type="text" name="email" id="email" [(ngModel)]="email"
-                class="hvr-glow">
-            <br>
-            <i class="fas fa-key"></i>
-            <input type="password" name="password" id="password"
-                [(ngModel)]="password" class="hvr-glow">
-            <br>
-            <button type="submit" (click)="login()" class="hvr-glow">Login</button>
-            <ng-template #loggedOut>
-                <button (click)="auth.loginWithRedirect()">Log in</button>
-            </ng-template>
-            <ng-container *ngIf="auth.isAuthenticated$ | async; else loggedOut">
-                <button (click)="auth.logout({ logoutParams: { returnTo:
-                    document.location.origin } })">
-                    Log out
-                </button>
-            </ng-container>
-            <ul *ngIf="auth.user$ | async as user">
-                <li>{{ user.name }}</li>
-                <li>{{ user.email }}</li>
-            </ul>`
-        </form>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post" class="forma">
+        <h1 class="text-pop-up-top">Ingresar al Sistema</h1>
+        <i class="fas fa-user"></i>
+        <input type="text" name="email" id="email" [(ngModel)]="email" class="hvr-glow">
+        <br>
+        <i class="fas fa-key"></i>
+        <input type="password" name="password" id="password" [(ngModel)]="password" class="hvr-glow">
+        <br>
+        <button type="submit" (click)="login()" class="hvr-glow">Login reqres</button>
+        <button (click)="auth.loginWithRedirect()">Login Auth0</button>
+    </form>
+</body>
+
 </html>
