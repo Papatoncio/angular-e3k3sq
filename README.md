@@ -25,17 +25,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-graph TD;
-    A[Registrar Producto] --> B(Consultar Categorías);
-    B --> C{¿Producto Existe?};
-    C -- Sí --> D[Actualizar Producto];
-    C -- No --> E[Registrar Nuevo Producto];
-    F[Buscar Producto] --> G(Especialización en precio, categoría, clave y nombre para filtrar);
-    G --> H{¿Producto Encontrado?};
-    H -- Sí --> I[Actualizar Producto];
-    H -- No --> J[Mostrar Mensaje "Producto no encontrado"];
-    K[Eliminar Producto] --> L(Especialización para baja lógica o física);
-    L --> M{¿Producto Encontrado?};
-    M -- Sí --> N[Eliminar Producto];
-    M -- No --> O[Mostrar Mensaje "Producto no encontrado"];
